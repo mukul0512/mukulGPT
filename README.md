@@ -1,6 +1,7 @@
-## mukulGPT
+## mukulgpt
 
 Chat with your PDFs locally using Next.js, React Compiler, and a local Ollama LLM + embeddings.
+mukulGPT is a local RAG (Retrieval-Augmented Generation) app: you upload a PDF, it is indexed locally, and you chat with it. Answers are based on the PDF content, using a local LLM and embeddings. No cloud AI or external APIs are required; data stays on your machine.
 
 ### Tech stack
 
@@ -20,7 +21,7 @@ Chat with your PDFs locally using Next.js, React Compiler, and a local Ollama LL
 ### Local setup
 
 ```bash
-cd frontend
+cd mukulGPT
 cp .env.example .env.local
 npm install
 npm run dev
@@ -35,6 +36,6 @@ By default, the app expects Ollama at `http://localhost:11434`. You can change t
 3. Wait for indexing to complete.
 4. Ask questions about the PDF in the chat panel on the right.
 
-All PDFs and vector data are stored locally under `frontend/storage/` (gitignored).
+All PDFs and vector data are stored locally under `mukulGPT/storage/` (gitignored).
 
-# mukulGPT
+# mukulgpt
